@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+}
+h1 {
+    color: black;
+    background-color: white;
+    font-size: 180%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2 {
+    color: black;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0px
+}
+p {
+    color: black;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.relative {
+    float: right;
+    width: 70%;
+}
+ol {
+    color: black;
+    background: white;
+    font-size: 100%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width: 20%;
+	float: left
+	margin: 5px
+}
+#image{
+	margin: 5px
+	width: 400px
+	height: 400px
+}
+img {
+	float:left
+}
+input{
+	color: black;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}	
+#block{ 
+	background-color: white;
+	font-size:10px;
+	color:white;
+	padding:5px;
+}
+	
+	
+	
