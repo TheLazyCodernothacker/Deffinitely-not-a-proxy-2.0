@@ -6,10 +6,7 @@ function rickroll(){
   var yMusic = new Audio('Assets/sounds/Studio_Project.mp3');
   yMusic.play();
   }
-function pauseMusic(){
-  yMusic.pause();
-  xMusic.pause();
-}
+
 
 
  
