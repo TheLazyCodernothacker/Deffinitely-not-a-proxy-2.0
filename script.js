@@ -1,13 +1,14 @@
 function playMusic(){
-  var music = new Audio('Assets/sounds/coolsong.mp3');
-  music.play();
+  var xMusic = new Audio('Assets/sounds/coolsong.mp3');
+  xMusic.play();
   }
 function rickroll(){
-  var music = new Audio('Assets/sounds/Studio_Project.mp3');
-  music.play();
+  var yMusic = new Audio('Assets/sounds/Studio_Project.mp3');
+  yMusic.play();
   }
 function pauseMusic(){
-  music.pause();
+  yMusic.pause();
+  xMusic.pause();
 }
 
 
