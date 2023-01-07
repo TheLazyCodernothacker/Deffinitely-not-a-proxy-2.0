@@ -7,7 +7,7 @@ function rickroll(){
   music.play();
   }
 function pauseMusic(){
-  music.pause():
+  music.pause();
 }
 
 
