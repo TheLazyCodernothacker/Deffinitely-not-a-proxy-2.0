@@ -37,7 +37,13 @@
 		</div>
 		<button onclick="playMusic();margin:none"style="float:left;font-size:325%;height:85px;border-radius: 25p">Play Cool Music!</button>
 		<button onclick="rickroll();margin:none"style="float:left;font-size:325%;height:85px;border-radius: 25p">Play More Cool Music!</button>
-		<button onclick="pauseMusic();margin:none"style="float:left;font-size:325%;height:85px;border-radius: 25p">Pause button</button>
+		<button type="button;margin:none"style="float:left;font-size:325%;height:85px;border-radius: 25p">Pause button</button>
+		<script>
+   var pressedButton = document.getElementsByTagName("button")[0];
+   pressedButton.addEventListener("click", function (event) {
+      alert("You can't pause it!")
+   })
+</script>
 		<p id="P1" style="float:left;font-size:300%;margin-top:0px;margin-bottom:20px;width:100%">Welcome to the Blocked Games List!!!<br></p>
 		<p style="width:20%;float:left;margin:0px">1. <a href="https://eli-schwartz.github.io/cookieclicker/" target="_blank">Cookie Clicker</a><br>
 			2. <a href="https://poki.com" target="_blank">Poki</a><br>
