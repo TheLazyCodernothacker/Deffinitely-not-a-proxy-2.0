@@ -2,7 +2,7 @@
   var yMusic = new Audio('Assets/sounds/Studio_Project.mp3');
   var Nugget = new Audio('Assets/sounds/Nugget.mp3');
   var celery = new Audio('Assets/sounds/Celebrate.mp3');
-  var SauceBad = new Audeio('Assets/sounds/boo.mp3');
+  var SauceBad = new Audio('Assets/sounds/boo.mp3');
 function playMusic(){
   xMusic.play();
   }
