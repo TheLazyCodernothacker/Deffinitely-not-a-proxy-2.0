@@ -1,6 +1,7 @@
   var xMusic = new Audio('Assets/sounds/coolsong.mp3');
   var yMusic = new Audio('Assets/sounds/Studio_Project.mp3');
   var Nugget = new Audio('Assets/sounds/Nugget.mp3');
+  var celery = new Audio('Assets/sounds/Celebrate.mp3');
 function playMusic(){
   xMusic.play();
   }
@@ -34,5 +35,9 @@ function MOREchickenNuggie() {
  function stopmusic() {
   alert("You can't pause 'cool music' you have to pause 'OUR music'")
   xMusic.play();
+ }
+
+function CelebrateDif() {
+  celery.play();
  }
   
