@@ -42,7 +42,7 @@ function CelebrateDif() {
   celery.play();
  }
 
-function badSauce() {
+function BadSauce() {
   bad.play();
 }
   
