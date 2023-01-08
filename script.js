@@ -7,7 +7,14 @@ function rickroll(){
   yMusic.play();
   }
 
-
+function confirmjoke() {
+  let text = "Press a button!\nEither OK or Cancel.";
+  if (confirm(text) == true) {
+    ;
+  } else {
+    ;
+  }
+}
 
  
   
