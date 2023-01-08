@@ -17,20 +17,42 @@ function confirmjoke() {
   }
 }
 
+
 function chickenNuggie() {
   Nugget.play();
   alert("Corn downloaded!")
+  const pictureUrl = "./Assets/corn.png";
+  const a = document.createElement("a");
+  a.href = pictureUrl;
+  a.download = "corn.png";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
  }
  
 function morechickenNuggie() {
   Nugget.play();
   alert("More Corn downloaded!")
+  const pictureUrl = "./Assets/corn.png";
+  const a = document.createElement("a");
+  a.href = pictureUrl;
+  a.download = "corn.png";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
  }
  
  
 function MOREchickenNuggie() {
   Nugget.play();
   alert("MORE Corn downloaded!")
+  const pictureUrl = "./Assets/corn.png";
+  const a = document.createElement("a");
+  a.href = pictureUrl;
+  a.download = "corn.png";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
  }
 
  function stopmusic() {
