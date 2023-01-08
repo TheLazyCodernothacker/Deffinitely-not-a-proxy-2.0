@@ -18,4 +18,20 @@ function confirmjoke() {
   xMusic.play();
  }
   
-  
+document.addEventListener("visibilitychange", function() {
+  if (document.hidden) {
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png';
+
+    // Append the link element to the head of the document
+    document.getElementsByTagName('head')[0].appendChild(link);
+    
+    document.title = "Google";
+    
+  } else {
+    // The user has returned to this site
+    
+  }
+});
