@@ -1,5 +1,6 @@
   var xMusic = new Audio('Assets/sounds/coolsong.mp3');
   var yMusic = new Audio('Assets/sounds/Studio_Project.mp3');
+  var Nugget = new Audio('Assets/sounds/NuggetC.mp3');
 function playMusic(){
   xMusic.play();
   }
@@ -15,6 +16,7 @@ function confirmjoke() {
 }
 
  function chickenNuggie() {
+  Nugget.play();
   alert("Corn downloaded!")
  }
 
