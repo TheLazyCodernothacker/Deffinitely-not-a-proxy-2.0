@@ -2,6 +2,7 @@
   var yMusic = new Audio('Assets/sounds/Studio_Project.mp3');
   var Nugget = new Audio('Assets/sounds/Nugget.mp3');
   var celery = new Audio('Assets/sounds/Celebrate.mp3');
+  var bad = new Audeio('Assets/sounds/boo.wav');
 function playMusic(){
   xMusic.play();
   }
@@ -40,4 +41,8 @@ function MOREchickenNuggie() {
 function CelebrateDif() {
   celery.play();
  }
+
+function badSauce() {
+  bad.play();
+}
   
