@@ -10,9 +10,6 @@ function rickroll(){
 function confirmjoke() {
   let text = "This is a joke";
   if (confirm(text) == true) {
-    
-  } else {
-    
   }
 }
 
