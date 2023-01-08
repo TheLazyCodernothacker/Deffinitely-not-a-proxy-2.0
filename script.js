@@ -15,6 +15,7 @@ function confirmjoke() {
 
  function stopmusic() {
   alert("You can't pause 'cool music' you have to pause 'OUR music'")
+  xMusic.play();
  }
   
   
