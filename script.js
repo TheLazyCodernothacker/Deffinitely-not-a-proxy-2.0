@@ -14,8 +14,8 @@ function confirmjoke() {
 }
 
  function stopmusic() {
-  yMusic.pause()
-  xMusic.pause()
+  yMusic.stop()
+  xMusic.stop()
  }
   
   
