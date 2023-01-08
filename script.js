@@ -15,9 +15,20 @@ function confirmjoke() {
   }
 }
 
- function chickenNuggie() {
+function chickenNuggie() {
   Nugget.play();
   alert("Corn downloaded!")
+ }
+ 
+function morechickenNuggie() {
+  Nugget.play();
+  alert("More Corn downloaded!")
+ }
+ 
+ 
+function MOREchickenNuggie() {
+  Nugget.play();
+  alert("MORE Corn downloaded!")
  }
 
  function stopmusic() {
