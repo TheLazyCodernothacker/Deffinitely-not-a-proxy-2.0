@@ -13,6 +13,12 @@ function confirmjoke() {
   }
 }
 
+function chickenNuggie() {
+  let text = "Corn Downloaded!";
+  if (confirm(text) == true) {
+  }
+}
+
  function stopmusic() {
   alert("You can't pause 'cool music' you have to pause 'OUR music'")
   xMusic.play();
