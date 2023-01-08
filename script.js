@@ -8,11 +8,11 @@ function rickroll(){
   }
 
 function confirmjoke() {
-  let text = "Press a button!\nEither OK or Cancel.";
+  let text = "This is a joke";
   if (confirm(text) == true) {
-    ;
+    
   } else {
-    ;
+    
   }
 }
 
