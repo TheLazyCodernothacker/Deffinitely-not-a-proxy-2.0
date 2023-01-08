@@ -1,10 +1,11 @@
 You are responsible for all of the information you give us of your personal life, your browsing history, your social security number, and lastly information about your family. Something else you should note is I will remain anonymous so you won't know who to complain to after you lose everything.
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">I agree</button>
 <script>
 function myFunction() {
   let text = "Confirm that you agree to the Terms of Service.";
   if (confirm(text) == true) {
     window.location.replace('./index.html');
+    alert("You agreed to the ToS and you now will be redirected to the website ")
   } else {
   }
 }
