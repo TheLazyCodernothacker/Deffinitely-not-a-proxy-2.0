@@ -71,3 +71,7 @@ function BadSauce() {
 function SueUs() {
   alert("Your broke so your gonna go into debt now")
 }
+
+function toes() {
+  location.replace("assets/sue/tic.html")
+}
