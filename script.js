@@ -73,5 +73,5 @@ function SueUs() {
 }
 
 function toes() {
-  location.replace("assets/sue/tic.html")
+  location.replace("sue/tic.html")
 }
