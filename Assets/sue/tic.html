@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrapper {
+			display: flex;
+			width: 100%;
+			height: 100vh;
+			justify-content: center;
+  			align-items: center;
+		}
+		#game {
+			display: flex;
+			position: relative;
+			flex-wrap: wrap;
+			height: 300px;
+  			width: 300px;
+  			justify-content: space-between;
+  			align-content: space-between;
+  			background-color: #eaecea;
+		}
+		.square {
+			width: 32%;
+			height: 32%;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+  			align-items: center;
+		}
+		.x, .o {
+			background-position: center;
+			background-size: contain;
+		}
+		.x {
+			background-image: url("img/x.svg");
+		}
+		.o {
+			background-image: url("img/o.svg");
+		}
+		.red {
+			background-color: #fffefe;
+			background-blend-mode: color-burn;
+		}
+		#msg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #ffffffdb;
+			display: flex;
+			justify-content: center;
+  			align-items: center;
+		}
+		.hidden {
+			display: none!important;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="game">
+			<div id="0" class="square"></div>
+			<div id="1" class="square"></div>
+			<div id="2" class="square"></div>
+			<div id="3" class="square"></div>
+			<div id="4" class="square"></div>
+			<div id="5" class="square"></div>
+			<div id="6" class="square"></div>
+			<div id="7" class="square"></div>
+			<div id="8" class="square"></div>
+			<div id="msg" class="hidden">
+				<a href=""><h1>Restart</h1></a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const SQRS = document.querySelectorAll(".square"),
+		COMBOS = [
+			[0, 1, 2],
+			[3, 4, 5],
+			[6, 7, 8],
+			[0, 3, 6],
+			[1, 4, 7],
+			[2, 5, 8],
+			[0, 4, 8],
+			[2, 4, 6]
+		],
+		PLAYERS = {
+			X: "x", 
+			O: "o",
+		},
+		MARKED = "red";
+
+		var state = [
+			0, 0, 0,
+			0, 0, 0,
+			0, 0, 0,
+		],
+		settings = {
+			AI: true,
+		}
+		currentPlayer = PLAYERS.X,
+		winner = null,
+		play = true;
+
+		for (var i = SQRS.length - 1; i >= 0; i--) {
+
+			SQRS[i].addEventListener('click', function() {
+				if (play) playerMove(this);
+				if (play && settings.AI) computerMove();
+            });
+		}
+
+		function getAvailableMoves() {
+			let array = []
+			for (var i = state.length - 1; i >= 0; i--) {
+				if (state[i] == 0) array.push(i);
+			}
+			return array
+		}
+
+		function computerMove() {
+			play = false;
+			let availableMoves = getAvailableMoves(),
+			rangomMove = availableMoves[getRandomInt(availableMoves.length)]
+			state[rangomMove] = currentPlayer;
+			setTimeout(() => {
+				play = true;
+				SQRS[rangomMove].classList.add(currentPlayer);
+				switchPlayer();
+				checkWinner();
+			}, 700);
+		}
+
+		function playerMove(elem) {
+			console.log(getAvailableMoves()); // test remove
+			let value = state[elem.id];
+			if (value == 0 ) {
+				elem.classList.add(currentPlayer);
+				state[elem.id] = currentPlayer;
+				switchPlayer();
+			}
+			checkWinner();		
+		}
+
+		function switchPlayer() {
+			currentPlayer = (currentPlayer == PLAYERS.X)? PLAYERS.O : PLAYERS.X
+		}
+
+		function checkWinner() {
+			for (var i = COMBOS.length - 1; i >= 0; i--) {
+				let combo = {
+					x: 0,
+					o: 0
+				}
+
+				for (var j = COMBOS[i].length - 1; j >= 0; j--) {
+					switch (state[COMBOS[i][j]]) {
+						case "x":
+							combo.x += 1;
+							break;
+						case "o":
+							combo.o += 1;
+							break;
+					}
+					if (combo.x == 3) {
+						won(PLAYERS.X, COMBOS[i]);
+						break;
+					}
+					if (combo.o == 3) {
+						won(PLAYERS.O, COMBOS[i]);
+						break;
+					}
+					if (play && !state.includes(0)) {
+						tie();
+						break;
+					}
+				}
+				if (!play) {
+					break;
+				};
+			}
+		}
+
+		function won(player, combo) {
+			winner = { 
+				player: player,
+				combo: combo
+			}
+			console.log('Winner:', winner);
+			for (var i = combo.length - 1; i >= 0; i--) {
+				SQRS[combo[i]].classList.add(MARKED)
+			}
+			gameOver();
+		}
+
+		function tie(){
+			console.log('Tie');
+			gameOver();
+		}
+
+		function gameOver() {
+			play = false;
+			console.log('Game Over')
+			document.getElementById("msg").classList.remove('hidden');
+		}
+
+		function getRandomInt(max) {
+		  return Math.floor(Math.random() * Math.floor(max));
+		}
+	</script>
+	
+</body>
+</html>
