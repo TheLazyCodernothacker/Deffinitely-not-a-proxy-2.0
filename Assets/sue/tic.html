@@ -34,10 +34,10 @@
 			background-size: contain;
 		}
 		.x {
-			background-image: url("img/x.svg");
+			background-image: url("Assets/sue/x.svg");
 		}
 		.o {
-			background-image: url("img/o.svg");
+			background-image: url("Assets/sue/o.svg");
 		}
 		.red {
 			background-color: #fffefe;
@@ -194,17 +194,20 @@
 				SQRS[combo[i]].classList.add(MARKED)
 			}
 			gameOver();
+			alert("You Sued Us for -$1,000,000")
 		}
 
 		function tie(){
 			console.log('Tie');
 			gameOver();
+			alert("You Got Sued for $14.9 Septillion pay us back in 69 seconds")
 		}
 
 		function gameOver() {
 			play = false;
 			console.log('Game Over')
 			document.getElementById("msg").classList.remove('hidden');
+			alert("You went into infinite debt")
 		}
 
 		function getRandomInt(max) {
