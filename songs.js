@@ -1,5 +1,5 @@
   var oneMusic = new Audio('Assets/sounds/byob.mp3');
-  var twoMusic = new Audio('Assets/sounds/.mp3');
+  var twoMusic = new Audio('Assets/sounds/smoothjazz.mp3');
   var threeMusic = new Audio('Assets/sounds/.mp3');
   var fourMusic = new Audio('Assets/sounds/furelise.mp3');
   var fiveMusic = new Audio('Assets/sounds/.mp3');
