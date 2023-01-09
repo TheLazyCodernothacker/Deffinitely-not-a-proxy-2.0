@@ -68,3 +68,5 @@ function BadSauce() {
   SauceBad.play();
 }
   
+function SueUs() {
+  alert("Your broke so your gonna go into debt now")
