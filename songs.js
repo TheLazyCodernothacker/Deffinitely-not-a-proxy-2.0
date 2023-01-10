@@ -7,7 +7,7 @@
   var sevenMusic = new Audio('Assets/sounds/.mp3');
   var eightMusic = new Audio('Assets/sounds/.mp3');
   var nineMusic = new Audio('Assets/sounds/.mp3');
-  var tenMUsic = new Audio('Assets/sounds/.mp3');
+  var tenMUsic = new Audio('Assets/sounds/spirit.mp3');
 function songone(){
   oneMusic.play();
   }
