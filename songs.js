@@ -5,7 +5,7 @@
   var fiveMusic = new Audio('Assets/sounds/heheheha.mp3.loop=true');
   var sixMusic = new Audio('Assets/sounds/toxicity.mp3');
   var sevenMusic = new Audio('Assets/sounds/.mp3');
-  var eightMusic = new Audio('Assets/sounds/.mp3');
+  var eightMusic = new Audio('Assets/sounds/amongus.mp3');
   var nineMusic = new Audio('Assets/sounds/RUSH E.mp3');
   var tenMusic = new Audio('Assets/sounds/spirit.mp3');
 function songone(){
