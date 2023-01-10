@@ -15,7 +15,7 @@ Not a proxy
 To deploy this project run
 
 ```bash
-  start index.html
+  vi index.html
 ```
 
 
@@ -36,7 +36,7 @@ Go to the project directory
 Start the server
 
 ```bash
-  start index.html
+  vi index.html
 ```
 
 
