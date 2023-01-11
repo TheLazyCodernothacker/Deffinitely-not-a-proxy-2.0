@@ -53,12 +53,25 @@ input{
     font-size: 100%;
     padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border:none;
+}	
+label{
+	color: black;
+    background-color: white;
+    font-size: 100%;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width:100px;
+	float:left;
 }	
 #block{ 
 	background-color: white;
 	font-size:10px;
 	color:white;
 	padding:5px;
+}
+#widthspecial{
+	width:180px
 }
 	
 	
