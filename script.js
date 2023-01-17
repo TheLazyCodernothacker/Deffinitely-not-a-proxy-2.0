@@ -75,3 +75,6 @@ function SueUs() {
 function toes() {
   location.replace("sue/tic.html")
 }
+
+function instruct() {
+  alert("If you win you sue us, if you lose we countersue you")
