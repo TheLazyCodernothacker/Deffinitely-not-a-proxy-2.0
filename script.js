@@ -78,3 +78,4 @@ function toes() {
 
 function instruct() {
   alert("If you win you sue us, if you lose we countersue you")
+} 
