@@ -20,7 +20,10 @@ function confirmjoke() {
 
 function chickenNuggie() {
   Nugget.play();
-  alert("Corn downloaded!")
+  swal({
+  title: "Corn Downloaded!",
+  icon: "success",
+  });
   const pictureUrl = "./Assets/corn.png";
   const a = document.createElement("a");
   a.href = pictureUrl;
@@ -32,7 +35,10 @@ function chickenNuggie() {
  
 function morechickenNuggie() {
   Nugget.play();
-  alert("More Corn downloaded!")
+  swal({
+  title: "More Corn Downloaded!",
+  icon: "success",
+  });
   const pictureUrl = "./Assets/corn.png";
   const a = document.createElement("a");
   a.href = pictureUrl;
@@ -45,7 +51,10 @@ function morechickenNuggie() {
  
 function MOREchickenNuggie() {
   Nugget.play();
-  alert("MORE Corn downloaded!")
+  swal({
+  title: "MORE Corn Downloaded!",
+  icon: "success",
+  });
   const pictureUrl = "./Assets/corn.png";
   const a = document.createElement("a");
   a.href = pictureUrl;
