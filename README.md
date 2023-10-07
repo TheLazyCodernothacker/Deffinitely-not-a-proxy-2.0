@@ -54,17 +54,6 @@ Just issue a pull request and we will check the code for any malicious code
 - Things that you TOTALLY need
 - TOTALLY unblocked links
 
-
-## Feedback
-
-If you have any feedback, please reach out to us at contact@deffinitelynotaproxy2.0.ga
-
-
-## Support
-
-For support, email contact@deffinitelynotaproxy2.0.ga or create a issue.
-
-
 ## Roadmap/TODO
 
 - Additional browser support
@@ -76,7 +65,7 @@ For support, email contact@deffinitelynotaproxy2.0.ga or create a issue.
 
 ## Optimizations
 
-We have TOTALLY optmized our connection, and if the website is loading very slow for you, that's normal becuase our servers are in south africa and north koera which should be pretty far locations from you
+We have TOTALLY optmized our connection, and if the website is loading very slow for you, that's normal becuase our servers are in Africa and the great North Koera
 
 
 ## FAQ
@@ -91,11 +80,12 @@ You are responsible for all of the information you give us of your personal life
 
 #### Is the proxy going to leak my personal information and kill me in the process?
 
-No, this proxy TOTALLY not steal all of your personal information and totally won't kill you in the process.
+No, this proxy TOTALLY does not steal all of your personal information and totally won't kill you in the process.
 
 #### What does this proxy do?
 
-It blocks websites you visite
+It blocks websites you visit
+
 ## Used By
 
 This project is used by the following people:
